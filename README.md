@@ -172,6 +172,37 @@ AND MAKE SURE THEY ARE ACTIVE FIRST:
 chmod +x setup.sh start.sh stop.sh
 
 
+USING GIT VERSION CONTROL
+cd ......
+git init
+then, create .gitignore:, automatically:npx gitignore node,python
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+.env.local
+.env.*.local
+
+# Node (Next.js)
+node_modules/
+.next/
+dist/
+out/
+
+# Docker
+*.pid
+*.log
+
+# OS
+.DS_Store
+
+
+After that, just:
+git add .
+git commit -m "Whatever u wanna say"
+git push -u origin main
 
 
 
